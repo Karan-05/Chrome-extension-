@@ -71,6 +71,38 @@ To demonstrate this concept, we initiated a VM instance on our Google Cloud Plat
   - It listens for requests from the background script to perform text summarization and handles the summarization process using the Gemini Summarizer API.
   - It then sends the summarized text back to the background script, which relays it to the popup for display.
 
+## How to Set Up Built-in Gemini Nano in Chrome
+
+Follow these steps to enable and use Gemini Nano in Chrome:
+
+### 1. **Install Chrome Canary**
+   - Download and install **Chrome Canary version 127** or later from the official [Chrome Canary download page](https://www.google.com/chrome/canary/).
+
+### 2. **Enable Prompt API**
+   - Open Chrome and navigate to `chrome://flags/#prompt-api-for-gemini-nano`.
+   - Set the flag to **Enabled**.
+
+### 3. **Enable Optimization Guide**
+   - Open Chrome and go to `chrome://flags/#optimization-guide-on-device-model`.
+   - Set this flag to **Enabled BypassPerfRequirement**.
+   - Restart the browser for the changes to take effect.
+
+### 4. **Download Model**
+   - Go to `chrome://components/` in the address bar.
+   - Locate **"Optimization Guide On Device Model"**.
+   - Ensure the model is fully downloaded. If the version shows as **0.0.0.0**, click **"Check for update"**.
+
+### 5. **Troubleshoot**
+   - If you do not see the "Optimization Guide On Device Model" option, follow these steps:
+     - Disable the settings in **Step 2** and **Step 3**.
+     - Restart the browser.
+     - Re-enable the settings and restart Chrome again.
+
+### 6. **Verify Setup**
+   - Open any webpage in Chrome.
+   - Press **F12** to open the developer tools.
+   - In the console, check if `window.ai` is available to confirm that the Gemini Nano setup is complete.
+
 ## **Key Features:**
 
 - **Seamless Text Summarization:** Users can input any text, and the extension will provide a concise summary, saving time and improving information digestion.
