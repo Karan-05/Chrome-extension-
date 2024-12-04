@@ -1,7 +1,7 @@
 
 ### **Project Title: Gemini Cloud Analytics Chrome Extension**
 
-**Project URL:** [GitHub Repository URL]
+**Project URL:** [GitHub Repository URL](https://github.com/Karan-05/Chrome-extension-)
 
 **Video Demonstration:** [YouTube/Vimeo Video URL]
 
