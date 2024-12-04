@@ -36,8 +36,40 @@ To demonstrate this concept, we initiated a VM instance on our Google Cloud Plat
    - **Cloud Run Admin API**: Provides management features for deploying and scaling containerized applications in a fully managed environment.
 
 3. **Libraries and Frameworks:**
-   - **CryptoJS:** Implements cryptographic functions to secure data transmission.
-   - **Flask:** Powers the Python-based Cloud Function for handling HTTP requests.
+   - **Flask**: A lightweight WSGI web application framework in Python. Used in `main.py` to create the backend server that interacts with Google Cloud APIs.
+   - **google-cloud-monitoring**: The official Python client library for Google Cloud Monitoring, used in `main.py` to fetch CPU utilization metrics from Google Cloud.
+   - **google-protobuf**: A Python library for working with Protocol Buffers, used in `main.py` to convert datetime objects to protobuf Timestamps.
+   - **Chrome Extensions APIs**: Used in `app.js`, `background.js`, and `content_script.js` to enable interaction between the extension and the browser, including communication with the content script and handling user actions.
+   - **AI Summarizer API**: Used in `app.js` and `content_script.js` to access the Gemini AI model for text summarization.
+   - **CryptoJS**: Used for cryptographic functions in securing data transmission (not directly referenced in the code provided but typically used in Chrome extensions for secure communications).
+   - **CORS (Cross-Origin Resource Sharing)**: Configured in `main.py` to allow the extension to interact with the Flask server via browser-based HTTP requests.
+
+## File Descriptions
+
+### **main.py**
+- **Function**: 
+  - This file contains the Flask server that interacts with the Google Cloud Monitoring API to fetch CPU utilization metrics from Google Cloud. 
+  - It listens for HTTP requests, processes the request to fetch metric data, and responds with summarized CPU utilization metrics (average, maximum, minimum) for a specified time range. 
+  - The server is also set up to handle CORS headers for communication with the Chrome extension.
+  - The entry point for Cloud Functions is also defined here.
+
+### **app.js**
+- **Function**: 
+  - This script is used by the Chrome extension popup to initiate text summarization.
+  - When the user clicks the summarize button, it checks for text input, verifies if the Summarizer API is supported in the browser, and then requests a summary using the Gemini AI model.
+  - The script handles capabilities checks, monitors model download progress, and displays the summarized text to the user.
+
+### **background.js**
+- **Function**: 
+  - This background script listens for messages from the Chrome extension popup and handles the process of injecting the content script into the active tab.
+  - It communicates with the content script to request summarization of the text found on the current page. 
+  - The background script also handles errors related to script injection and communicates the status back to the popup.
+
+### **content_script.js**
+- **Function**: 
+  - This content script is injected into the active tab to extract the main content (text) from the webpage.
+  - It listens for requests from the background script to perform text summarization and handles the summarization process using the Gemini Summarizer API.
+  - It then sends the summarized text back to the background script, which relays it to the popup for display.
 
 ## **Key Features:**
 
