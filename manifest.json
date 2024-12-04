@@ -1,0 +1,12 @@
+{
+    "name": "Text Summarizer Extension",
+    "description": "Summarizes input text using the Summarizer API.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Text Summarizer"
+    },
+    "permissions": []
+  }
+  
