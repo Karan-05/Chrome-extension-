@@ -9,7 +9,7 @@
 
 **Gemini Cloud Analytics** is a Chrome Extension designed to enhance user productivity by giving real-time Cloud Analytics which are powered by AI text summarization. It leverages Chrome’s built-in AI models, Gemini, and Google Cloud's Monitoring APIs, and provides users with concise summaries of their inputted text alongside insightful CPU utilization metrics. 
 
-_**NOTE:This can be scaled with additional metrics from Cloud, but for the demonstration of idea, we built the pipeline for only CPU Utilization metric.**_
+_**NOTE: This can be scaled with additional metrics from Cloud, but for the demonstration of idea, we built the pipeline for only CPU Utilization metric.**_
 
 #### **APIs and Technologies Used:**
 
