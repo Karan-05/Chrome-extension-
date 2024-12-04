@@ -5,6 +5,10 @@
 
 **Video Demonstration:** [YouTube/Vimeo Video URL]
 
+## **Problem Statement:**
+
+In today’s fast-paced digital environment, users often need to process large amounts of text quickly while also keeping an eye on their system's performance. Existing tools typically address either content summarization or system monitoring separately. **Gemini Cloud Analytics** bridges this gap by providing an integrated solution that offers both functionalities within a single Chrome Extension. This dual capability enhances user efficiency by delivering actionable insights into both textual data and system performance metrics.
+
 ## **Description:**
 
 **Gemini Cloud Analytics** is a Chrome Extension designed to enhance user productivity by giving real-time Cloud Analytics powered by AI text summarization. It leverages Chrome’s built-in AI models, Gemini, and Google Cloud's Monitoring APIs, providing users with concise summaries of their inputted text alongside insightful CPU utilization metrics. 
@@ -27,10 +31,6 @@ To demonstrate this concept, we initiated a VM instance on our Google Cloud Plat
 3. **Libraries and Frameworks:**
    - **CryptoJS:** Implements cryptographic functions to secure data transmission.
    - **Flask:** Powers the Python-based Cloud Function for handling HTTP requests.
-
-## **Problem Statement:**
-
-In today’s fast-paced digital environment, users often need to process large amounts of text quickly while also keeping an eye on their system's performance. Existing tools typically address either content summarization or system monitoring separately. **Gemini Cloud Analytics** bridges this gap by providing an integrated solution that offers both functionalities within a single Chrome Extension. This dual capability enhances user efficiency by delivering actionable insights into both textual data and system performance metrics.
 
 ## **Key Features:**
 
