@@ -25,8 +25,15 @@ To demonstrate this concept, we initiated a VM instance on our Google Cloud Plat
    - **Write API & Rewrite API:** Enables dynamic content generation and modification within the extension.
 
 2. **Google Cloud Platform:**
-   - **Cloud Functions:** Hosts the backend service responsible for fetching CPU utilization metrics.
-   - **Cloud Monitoring API:** Retrieves real-time CPU performance data from Google Cloud resources.
+   - **Cloud Logging API**: Provides a centralized platform for managing logs and monitoring system events in Google Cloud.
+   - **Cloud Monitoring API**: Enables the collection and management of performance data and system metrics across cloud services.
+   - **Compute Engine API**: Provides access to virtual machine instances, allowing users to manage cloud infrastructure.
+   - **Cloud Functions API**: Facilitates the creation, deployment, and management of serverless functions in Google Cloud.
+   - **Artifact Registry API**: Manages storage and distribution of container images, artifacts, and other resources.
+   - **Cloud Pub/Sub API**: Allows for asynchronous messaging and event-driven architecture by facilitating communication between applications.
+   - **Cloud Build API**: Supports continuous integration and delivery by automating builds, tests, and deployments for applications.
+   - **Identity and Access Management (IAM) API**: Manages authentication, authorization, and access control to Google Cloud resources.
+   - **Cloud Run Admin API**: Provides management features for deploying and scaling containerized applications in a fully managed environment.
 
 3. **Libraries and Frameworks:**
    - **CryptoJS:** Implements cryptographic functions to secure data transmission.
